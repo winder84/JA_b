@@ -1,0 +1,48 @@
+<?php
+// module/Album/view/album/album/product.phtml:
+
+$title = 'ООО "Представительство TECH" - ' . $product->title;
+$this->headTitle($title);
+?>
+
+<div class="center_catalog">
+
+	<!---------------------------------Левое меню----------------------------->
+	<div class="left_menu">
+		<h4>КАТАЛОГ</h4>
+		<ul>
+			<?php
+			foreach ($cat_list as $key => $cl) {
+				if($key<7){
+					echo '<li><a href="/catalog' . $cl['link'] . '">' . $cl['title'] . '</a></li>';
+				}
+			}
+			?>
+			<li style=" margin-top: 5px;"><a href="/catalog" style="color: #fff;"><b>Весь каталог...</b></a></li>
+		</ul>
+	</div>
+	<!---------------------------------/Левое меню----------------------------->
+
+	<div class="breadcrumb_auto"><a href="/catalog">Каталог</a> &larr; </div>
+
+	<div class="main_left_menu_text_cat">
+		<a href="/catalog/list/<?=$category['id'];?>"><h3 id='category_title'><?=$category['title']; ?></h3></a>
+		<br>
+		<p id="category_desc"><?=$category['desc'] ?></p>
+	</div>
+
+	<!---------------------------------Галерея----------------------------->
+	<div class="hit_prod" style="margin-left: 20px;">
+		<?php
+		echo '<a href="/catalog/list/' . $category['id'] . '"><img src="/images/' . $category['image'] . '"></a>';
+		?>
+	</div>
+	<!---------------------------------/Галерея----------------------------->
+	</div>
+	<div class="product">
+		<img src="/images/<?=$product->image?>">
+		<h1><?=$product->title?></h1>
+		<div class="product_desc"><?=$product->description?></div>
+		<div class="clearfix"></div>
+	</div>
+

@@ -1,0 +1,153 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<?php echo $this->headTitle() ?>
+
+		<?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+		<!-- Le styles -->
+		<?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/images/favicon.ico'))
+						->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
+						->prependStylesheet($this->basePath() . '/css/style.css')
+						->prependStylesheet($this->basePath() . '/css/auto.css')
+						->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
+
+		<!-- Scripts -->
+		<?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+									  ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+									  ->prependFile($this->basePath() . '/js/auto.js')
+									  ->prependFile($this->basePath() . '/js/jquery.min.js')
+									  ->prependFile($this->basePath() . '/ckeditor/ckeditor.js')?>
+
+	</head>
+	<body>
+	<script type="text/javascript">
+
+	</script>
+		<div class="main">
+			<div class="container">
+				<div class="menu_auto">
+					<div class="menu_logo"></div>
+					<a class="menu_logo_text">TECH <span>KMV.RU</span></a>
+					<a class="menu_text">профессиональное автосервисное оборудование</a>
+
+<!---------------------------------Меню----------------------------->
+					<div class="menu_block">
+						<span class="gran"></span><a href="/">Главная</a>
+						<span class="gran"></span><a href="">О нас</a>
+						<span class="gran"></span><a href="/catalog">Каталог</a>
+						<span class="gran"></span><a href="">Новинки</a>
+						<span class="gran"></span><a href="">Скидки</a>
+						<span class="gran"></span><a href="">Контакты</a><span class="gran" style="margin-left: 5px;"></span>
+					</div>
+				</div>
+<!---------------------------------/Меню----------------------------->
+
+<!---------------------------------Слайдер----------------------------->
+				<div class="top_slider">
+					<ul>
+						<li class="slider_arrow_left" onclick="top_slider_left();"></li>
+						<li class="slider_image">
+							<img id="sl_i_1" src="/images/modena_mo_230mr.png">
+<!--							<img style="margin-left: -150px; opacity: 0;" id="sl_i_2" src="/images/launch_kds_5k.png">-->
+							<img style="margin-left: -150px; opacity: 0;" id="sl_i_2" src="/images/giuliano_s_112f.png">
+							<img style="margin-left: -150px; opacity: 0;" id="sl_i_3" src="/images/titan_54_00_bridge.png">
+							<img style="margin-left: -150px; opacity: 0;" id="sl_i_4" src="/images/hunter_gsp9200.png">
+							<img style="margin-top:-100px; margin-left: -200px; opacity: 0;" id="sl_i_5" src="/images/siver_e.png">
+						</li>
+						<li style="	vertical-align: top;">
+							<div id="sl_txt_1" class="slider_text">
+								<h1>Автомобильный <br> подъемник</h1>
+								<h2>MO-230MR/240MR</h2>
+								<p>Автомобильный двухстоечный подъемник компании <b style="color: #ff0000;">Modena</b> c гарантией в 3 года и подобной информацией по установке.<br> Лучшее решение для автосервиса.</p>
+							</div>
+<!--							<div style="opacity: 0;" id="sl_txt_2" class="slider_text">-->
+<!--								<h1>Компьютерный стенд <br> "сход-развал"</h1>-->
+<!--								<h2>Launch КДС 5К</h2>-->
+<!--								<p>Высокоточный и высоконадежный измерительный комплексм для проведения качественных измерений в процессе регулирования углов установки колес.</p>-->
+<!--							</div>-->
+							<div style="opacity: 0;" id="sl_txt_2" class="slider_text">
+								<h1>Шиномонтажный стенд</h1>
+								<h2>GIULIANO S 112F(GT)</h2>
+								<p>Размер диска(снаружи) - 12-22"<br> Усилие при отжатии покрышки 2,5 тонны<br>Двигатель 380В, 0.55 кВт<br>Монтажный стол скругленный<br>Габариты в упаковке 108х94х170 см<br>Вес 158кг(GT 213кг)</p>
+							</div>
+							<div style="opacity: 0;" id="sl_txt_3" class="slider_text">
+								<h1>Стенд для <br>правки дисков</h1>
+								<h2>Titan 54-00 Bridge</h2>
+								<p>Стенд(станок) для правки колесных дисков предназначен для реставрации легкосплавных, кованых и стальных дисков, диаметром от 10 до 24 дюймов.</p>
+							</div>
+							<div style="opacity: 0;" id="sl_txt_4" class="slider_text">
+								<h1>Балансировочный стенд <br>с LCD-монитором</h1>
+								<h2>Hunter GSP9200</h2>
+								<p>Hunter GSP9200 представляет собой компьютеризированный балансировочный стенд с LCD-монитором и автоматическим вводом всех трех параметров колеса.</p>
+							</div>
+							<div style="opacity: 0;" id="sl_txt_5" class="slider_text">
+								<h1>Универсальная система для рихтовки кузовов</h1>
+								<h2>SIVER "E"</h2>
+								<p>Стенд для правки кузовов SIVER "E" предназначен для восстановления аварийных кузовов транспортных средств. Оборудование имеет сертификат соответствия требованиям безопасности, сертификат СЕ и пожизненную гарантию на платформу.</p>
+							</div>
+						</li>
+						<li class="slider_arrow_right" onclick="top_slider_right();"></li>
+					</ul>
+
+				</div>
+<!---------------------------------/Слайдер----------------------------->
+
+				<div class="center">
+					<div style="background: #fff;">
+						<?php echo $this->content; ?>
+					</div>
+				</div>
+
+				<div class="footer">
+					<div class="footer_up"></div>
+					<div class="footer_info">
+						Дополнительная информация
+						<ul class="footer_ul">
+							<li><a href="#">Скачать прайс-лист</a></li>
+							<li><a href="#">Партнерам</a></li>
+							<li><a href="#">Клиентам</a></li>
+							<li><a href="#">Сертификаты</a></li>
+						</ul>
+						<p class="copyright">
+							Все права защищены.<br>
+							ООО "Представительство TECH" 2013г.
+						</p>
+					</div>
+					<p style="margin-left: 50px; float: left; color: #b7dae8; font-size: 14px; font-family: Corbil; margin-right: 450px">Задайте вопрос</p>
+					<form action="" class="footer_form">
+						<div style="float: left;">
+							<label>Ф.И.О.</label>
+							<label>e-mail</label>
+							<label>Тема</label>
+						</div>
+						<div style="float: left;">
+							<input id="q_fio" name="q_fio"><br>
+							<input id="q_mail" name="q_mail"><br>
+							<input id="q_theme" name="q_theme"><br>
+						</div><br>
+						<textarea id="fq_text" ></textarea><br>
+						<p style="float: left;font-family: Corbil;font-size: 12px; margin: 10px 0 0 210px; cursor: pointer;">Отправить</p>
+					</form>
+				</div>
+				<footer >
+				</footer>
+			</div> <!-- /container -->
+		</div>
+
+		<?php echo $this->inlineScript() ?>
+	<script>
+		$(document).ready(function()
+		{
+			var editor = CKEDITOR.replace('q_text',
+					{
+						// если нужно загружать файлы
+						filebrowserUploadUrl: '/ckeditor_uploader.php',
+						toolbar: 'Full'
+					});
+		});
+	</script>
+	</body>
+</html>

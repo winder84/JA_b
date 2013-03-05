@@ -1,0 +1,68 @@
+<div style="text-align: right; background: #fff; margin: 0 0 -47px 0">
+	<a href="<?php echo $this->url('zfcuser/logout') ?>">[Выйти]</a><br>
+
+	<div style="text-align: left; padding-bottom: 50px;">
+		<form action="/admin/edit" method="post">
+			<br><br>
+			<label style="margin: 0 0 0 50px;">Категории <a style="font-size: 10px;" href="/admin/add_cat">Добавить</a></label>
+			<select onchange="changeSel();" style="margin: 0 0 0 50px;" name="cat_id">
+				<?php
+					foreach ($category_all as $category) {
+				?>
+				<option value="<?=$category['id'] ?>"><?=$category['title'] ?></option>
+				<?php } ?>
+			</select>
+			<input type="submit" value="Изменить">
+			<a id="cat_del" style="font-size: 10px;" href="/admin/del/category/<?=$category['id'] ?>">Удалить</a>
+		</form>
+
+		<form action="/admin/edit" method="post">
+			<label style="margin: 0 0 0 50px;">Фирмы <a style="font-size: 10px;" href="/admin/add_firm">Добавить</a></label>
+			<select onchange="changeSel();" style="margin: 0 0 0 50px;" name="firm_id">
+				<?php
+				foreach ($firms_all as $firm) {
+					?>
+					<option value="<?=$firm['id'] ?>"><?=$firm['title'] ?></option>
+					<?php } ?>
+			</select>
+			<input type="submit" value="Изменить">
+			<a id="firm_del" style="font-size: 10px;" href="/admin/del/firms/<?=$firm['id'] ?>">Удалить</a>
+		</form>
+
+		<form action="/admin/edit" method="post">
+			<label style="margin: 0 0 0 50px;">Оборудование <a style="font-size: 10px;" href="/admin/add_product">Добавить</a></label>
+			<select onchange="changeSel();" style="margin: 0 0 0 50px;" name="prod_id">
+				<?php
+				foreach ($products_all as $product) {
+					?>
+					<option value="<?=$product['id'] ?>"><?=$product['title'] ?></option>
+					<?php } ?>
+			</select>
+			<input type="submit" value="Изменить">
+			<a id="prod_del" style="font-size: 10px;" href="/admin/del/product/<?=$product['id'] ?>">Удалить</a>
+		</form>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function()
+	{
+		cat_id = $("form select[name='cat_id'] option:selected").val();
+		firm_id = $("form select[name='firm_id'] option:selected").val();
+		prod_id = $("form select[name='prod_id'] option:selected").val();
+
+		$('#cat_del').attr('href', '/admin/del/category/' + cat_id);
+		$('#firm_del').attr('href', '/admin/del/firms/' + firm_id);
+		$('#prod_del').attr('href', '/admin/del/product/' + prod_id);
+	});
+
+	function changeSel() {
+		cat_id = $("form select[name='cat_id'] option:selected").val();
+		firm_id = $("form select[name='firm_id'] option:selected").val();
+		prod_id = $("form select[name='prod_id'] option:selected").val();
+
+		$('#cat_del').attr('href', '/admin/del/category/' + cat_id);
+		$('#firm_del').attr('href', '/admin/del/firms/' + firm_id);
+		$('#prod_del').attr('href', '/admin/del/product/' + prod_id);
+	}
+</script>

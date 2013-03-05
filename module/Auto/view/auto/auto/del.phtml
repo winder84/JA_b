@@ -1,0 +1,16 @@
+<div style="text-align: right; background: #fff; margin: 0 0 -47px 0">
+	<a href="<?php echo $this->url('zfcuser/logout') ?>">[Выйти]</a><br>
+
+	<div style="text-align: left; padding-bottom: 150px; margin: 100px 100px 0 300px; ">
+		<form action="" method="post">
+			<br>
+			<br>
+			<label style="margin: 0 0 0 50px;font-size: 22px;">Удалить "<b><?=$result_item['title']?></b>"?</label>
+			<br>
+			<input name="id" value="<?=$result_item['id']?>" hidden="true">
+			<input name="module" value="<?=$result_item['module']?>" hidden="true">
+			<input style="margin: 0 0 0 170px;font-size: 22px;" type="submit" name="del" value="Да">
+			<input style="margin: 0 0 0 50px;font-size: 22px;" type="submit" name="del" value="Нет">
+		</form>
+	</div>
+</div>

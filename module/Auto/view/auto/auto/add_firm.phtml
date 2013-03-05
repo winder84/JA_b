@@ -1,0 +1,32 @@
+<div style="text-align: right; background: #fff; margin: 0 0 -47px 0">
+	<a href="<?php echo $this->url('zfcuser/logout') ?>">[Выйти]</a><br>
+
+	<div style="text-align: left; padding-bottom: 50px; margin: 0 0 0 150px;">
+		<!--		Фирма-->
+			<form action="" method="POST">
+				<br><br>
+				<label style="margin: 0 0 0 50px;">Название</label>
+				<input name="title" value="">
+				<br>
+				<br>
+				<label style="margin: 0 0 0 50px;">Описание</label>
+				<textarea id="q_text" name="description"></textarea>
+				<br>
+				<br>
+				<label style="margin: 0 0 0 50px;">Изображение</label>
+				<input id="img_text" name="image" value="" onchange="chengeImg();">
+				<div style="margin: 20px 0 0 0; width: 500px;">
+					<img id="cat_img" src="/images/">
+				</div>
+				<input style="margin: 20px 0 0 0;" type="submit" value="Добавить">
+			</form>
+		<!--		Фирма-->
+
+	</div>
+</div>
+
+<script>
+	function chengeImg() {
+		$('#cat_img').attr('src', '/images/' + $('#img_text').val());
+	}
+</script>

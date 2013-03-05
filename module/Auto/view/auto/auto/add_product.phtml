@@ -1,0 +1,54 @@
+<div style="text-align: right; background: #fff; margin: 0 0 -47px 0">
+	<a href="<?php echo $this->url('zfcuser/logout') ?>">[Выйти]</a><br>
+
+	<div style="text-align: left; padding-bottom: 50px; margin: 0 0 0 150px;">
+		<!--		Оборудование-->
+			<form action="" method="POST">
+				<br><br>
+				<label style="margin: 0 0 0 50px;">Название</label>
+				<input name="title" value="">
+				<br>
+				<br>
+				<label style="margin: 0 0 0 50px;">Описание</label>
+				<textarea id="q_text" name="description"></textarea>
+				<br>
+				<br>
+				<label style="margin: 0 0 0 50px;">Родительская категория</label>
+				<select name="ref_id">
+					<option value="0">Нет</option>
+					<?php
+					foreach ($category_all as $category) {
+						?>
+						<option value="<?=$category['id'] ?>"><?=$category['title'] ?></option>
+						<?php } ?>
+				</select>
+				<label style="margin: 0 0 0 50px;">Фирма</label>
+				<select name="firm_id">
+					<option value="0">Нет</option>
+					<?php
+					foreach ($firms_all as $firm) {
+						?>
+						<option value="<?=$firm['id'] ?>" <?php if($firm['id'] == $aProduct['firm_id']){ echo 'selected';}?>><?=$firm['title'] ?></option>
+						<?php } ?>
+				</select>
+				<div style="border: 1px groove #cfd1cf; width: 220px; border-radius: 2px;">
+					<label style="margin: 0 0 0 50px;">Хит продаж</label>
+					<input style="margin: 0 0 0 80px;" type="checkbox" name="is_on_main" <?php if($aProduct['is_on_main'] == 1){ echo 'checked';}; ?>>
+				</div>
+				<label style="margin: 0 0 0 50px;">Изображение</label>
+				<input id="img_text" name="image" value="" onchange="chengeImg();">
+				<div style="margin: 20px 0 0 0; width: 500px;">
+					<img id="cat_img" src="/images/">
+				</div>
+				<input style="margin: 20px 0 0 0;" type="submit" value="Добавить">
+			</form>
+		<!--		Оборудование-->
+
+	</div>
+</div>
+
+<script>
+	function chengeImg() {
+		$('#cat_img').attr('src', '/images/' + $('#img_text').val());
+	}
+</script>

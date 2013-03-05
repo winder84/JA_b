@@ -1,0 +1,125 @@
+<div style="text-align: right; background: #fff; margin: 0 0 -47px 0">
+	<a href="<?php echo $this->url('zfcuser/logout') ?>">[Выйти]</a><br>
+
+	<div style="text-align: left; padding-bottom: 50px; margin: 0 0 0 50px;">
+		<!--		Категория-->
+		<?php if(isset($aCategory)) {?>
+			<form action="" method="POST">
+				<br><br>
+				<label style="margin: 0 0 0 50px;">Название</label>
+				<input name="title" value="<?=$aCategory['title']?>">
+				<input name="cat_edit" value="<?=$aCategory['id']?>" hidden="true">
+				<br>
+				<br>
+				<label style="margin: 0 0 0 50px;">Описание</label>
+				<textarea id="q_text" name="description"><?=$aCategory['description']?></textarea>
+				<br>
+				<br>
+				<label style="margin: 0 0 0 50px;">Родительская категория</label>
+				<select name="ref_id">
+					<option value="0">Нет</option>
+					<?php
+					foreach ($category_all as $category) {
+						?>
+						<option value="<?=$category['id'] ?>"  <?php if($category['id'] == $aCategory['ref_id']){ echo 'selected';}?>><?=$category['title'] ?></option>
+						<?php } ?>
+				</select>
+				<label style="margin: 0 0 0 50px;">Изображение</label>
+				<input id="img_text" name="image" value="<?=$aCategory['image'] ?>" onchange="chengeImg();">
+				<div style="margin: 20px 0 0 0; width: 500px;">
+					<img id="cat_img" src="/images/<?=$aCategory['image'] ?>">
+				</div>
+				<input style="margin: 20px 0 0 0;" type="submit" value="Изменить">
+			</form>
+		<?php }?>
+		<!--		Категория-->
+
+		<!--		Фирма-->
+		<?php if(isset($aFirm)) {?>
+		<form action="" method="POST">
+			<br><br>
+			<label style="margin: 0 0 0 50px;">Название</label>
+			<input name="title" value="<?=$aFirm['title']?>">
+			<input name="firm_edit" value="<?=$aFirm['id']?>" hidden="true">
+			<br>
+			<br>
+			<label style="margin: 0 0 0 50px;">Описание</label>
+			<textarea id="q_text" name="description"><?=$aFirm['description']?></textarea>
+			<br>
+			<label style="margin: 0 0 0 50px;">Изображение</label>
+			<input id="img_text" name="image" value="<?=$aFirm['image'] ?>" onchange="chengeImg();">
+			<div style="margin: 20px 0 0 0; width: 500px;">
+				<img id="cat_img" src="/images/<?=$aFirm['image'] ?>">
+			</div>
+			<input style="margin: 20px 0 0 0;" type="submit" value="Изменить">
+		</form>
+		<?php }?>
+		<!--		Фирма-->
+
+		<!--		Оборудование-->
+		<?php if(isset($aProduct)) {?>
+		<form action="" method="POST">
+			<br><br>
+			<label style="margin: 0 0 0 50px;">Название</label>
+			<input name="title" value="<?=$aProduct['title']?>">
+			<input name="prod_edit" value="<?=$aProduct['id']?>" hidden="true">
+			<br>
+			<br>
+			<label style="margin: 0 0 0 50px;">Описание</label>
+			<textarea id="q_text" name="description"><?=$aProduct['description']?></textarea>
+			<br>
+			<br>
+			<label style="margin: 0 0 0 50px;">Родительская категория</label>
+			<select name="ref_id">
+				<option value="0">Нет</option>
+				<?php
+				foreach ($category_all as $category) {
+					?>
+					<option value="<?=$category['id'] ?>" <?php if($category['id'] == $aProduct['ref_id']){ echo 'selected';}?>><?=$category['title'] ?></option>
+					<?php } ?>
+			</select>
+			<label style="margin: 0 0 0 50px;">Фирма</label>
+			<select name="firm_id">
+				<option value="0">Нет</option>
+				<?php
+				foreach ($firms_all as $firm) {
+					?>
+					<option value="<?=$firm['id'] ?>" <?php if($firm['id'] == $aProduct['firm_id']){ echo 'selected';}?>><?=$firm['title'] ?></option>
+					<?php } ?>
+			</select>
+			<div style="border: 1px groove #cfd1cf; width: 220px; border-radius: 2px;">
+				<label style="margin: 0 0 0 50px;">Хит продаж</label>
+				<input style="margin: 0 0 0 80px;" type="checkbox" name="is_on_main" <?php if($aProduct['is_on_main'] == 1){ echo 'checked';}; ?>>
+			</div>
+			<br>
+			<br>
+			<label style="margin: 0 0 0 50px;">Изображение</label>
+			<input id="img_text" name="image" value="<?=$aProduct['image'] ?>" onchange="chengeImg();">
+			<div style="margin: 20px 0 0 0; width: 500px;">
+				<img id="cat_img" src="/images/<?=$aProduct['image'] ?>">
+			</div>
+			<input style="margin: 20px 0 0 0;" type="submit" value="Изменить">
+		</form>
+		<?php }?>
+		<!--		Оборудование-->
+
+	</div>
+</div>
+
+<script>
+	$(document).ready(function()
+	{
+		var editor = CKEDITOR.replace('q_text',
+				{
+					// если нужно загружать файлы
+					filebrowserUploadUrl: '/ckeditor_uploader.php',
+					toolbar: 'Full'
+				});
+	});
+</script>
+
+<script>
+	function chengeImg() {
+		$('#cat_img').attr('src', '/images/' + $('#img_text').val());
+	}
+</script>
