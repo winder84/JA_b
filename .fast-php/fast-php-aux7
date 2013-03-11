@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export PHP_FCGI_MAX_REQUESTS=500
+exec /opt/php_aux7/current/bin/php-cgi -d sendmail_path='/usr/bin/sendmail -t -i -f avtoserviskafe8_945ed433@1gb.ru'

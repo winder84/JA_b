@@ -1,0 +1,527 @@
+AWSTATS DATA FILE 6.95 (build 1.943)
+# If you remove this file, all statistics for date 201207 will be lost/reset.
+# Last config file used to build this data file was /home/virtwww/w_avtoserviskafe8_945ed433/.awstats/awstats.xn--80aaagabsufuc5b1amej.xn--p1ai.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2016                
+POS_TIME 2703                
+POS_VISITOR 14444               
+POS_DAY 16721               
+POS_DOMAIN 3529                
+POS_LOGIN 3762                
+POS_ROBOT 3949                
+POS_WORMS 4359                
+POS_EMAILSENDER 4490                
+POS_EMAILRECEIVER 4633                
+POS_SESSION 17240               
+POS_SIDER 17447               
+POS_FILETYPES 4768                
+POS_OS 5037                
+POS_BROWSER 5202                
+POS_SCREENSIZE 5571                
+POS_UNKNOWNREFERER 5645                
+POS_UNKNOWNREFERERBROWSER 5795                
+POS_ORIGIN 5940                
+POS_SEREFERRALS 6083                
+POS_PAGEREFS 6240                
+POS_SEARCHWORDS 6681                
+POS_KEYWORDS 9291                
+POS_MISC 2367                
+POS_ERRORS 11638               
+POS_CLUSTER 3618                
+POS_SIDER_404 11763               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20120801015300 1682 453527 9491347237877
+FirstTime 20120714150025
+LastTime 20120731200944
+LastUpdate 20120801174745 1682 1569 112 0 0
+TotalVisits 70                  
+TotalUnique 47                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 57                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 4 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 41 166 6137147 49 95 1135661
+1 1 1 34773 45 45 1000479
+2 1 30 1376658 43 44 971242
+3 1 30 1376658 51 58 1253959
+4 0 0 0 55 55 1478878
+5 0 0 0 59 59 1642483
+6 0 1 1443 36 37 798811
+7 3 3 93460 23 23 518721
+8 3 69 2726805 33 36 607252
+9 3 32 1435535 24 26 317586
+10 13 112 7207609 27 42 487947
+11 39 156 6119948 23 87 463506
+12 30 191 5743987 23 57 530871
+13 11 95 4642461 33 41 648012
+14 55 449 29421401 41 85 831576
+15 135 1378 62356363 51 83 802286
+16 68 649 49880871 31 56 519355
+17 47 238 6948513 15 44 313488
+18 54 404 15466025 50 190 899955
+19 10 44 2234249 29 33 297708
+20 24 96 4189327 26 60 429635
+21 43 462 10019430 44 89 417697
+22 127 1009 14119034 177 297 3097523
+23 0 0 0 38 38 775897
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 709 5615 231531697
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 1
+stat 1 41 107294 20120718173151
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 7
+googlebot 423 9821987 20120731200325 69
+yandex 219 5825913 20120731233009 18
+bot[\s_+:,\.\;\/\\-] 121 3140337 20120724152808 0
+crawl 19 660612 20120731055524 0
+mail\.ru 18 241376 20120731193719 11
+[\s_+:,\.\;\/\\-]bot 16 175469 20120728134451 10
+spider 1 34768 20120720100121 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 11
+css 772 2580877 0 0
+png 1922 64378696 0 0
+htm 31 89962 0 0
+php 342 27716453 0 0
+html 79 2627412 0 0
+js 701 22621224 0 0
+jpg 1452 104268732 0 0
+jpeg 6 194680 0 0
+Unknown 252 6497126 0 0
+gif 53 277495 0 0
+xls 5 279040 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 11
+linuxandroid 6
+winlong 136
+winxp 234
+winnt 3
+win2000 1
+linux 31
+macosx 142
+winunknown 180
+win2003 1
+Unknown 112
+win2008 4769
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 21
+msie6.0 2
+firefox5.0 1
+firefox4.0.1 53
+android 6
+safari2.0.4 180
+chrome20.0.1132.57 3209
+opera9.80 157
+chrome19.0.1084.46 1263
+safari5.1.7 142
+msie8.0 77
+firefox6.0.2 34
+firefox13.0.1 68
+chrome20.0.1132.47 31
+msie7.0 19
+firefox14.0.1 84
+firefox3.6.12 1
+msie5.0 3
+msie9.0 171
+firefox3.6.10 1
+Unknown 112
+firefox3.6.8 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 2
+'artviper(tm) 20120720100125
+Apple-PubSub/65.28 20120731175212
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+'artviper(tm) 20120720100125
+Apple-PubSub/65.28 20120731175212
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 151 165
+From1 0 0
+From2 16 16
+From3 9 183
+From4 533 5251
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+yandex 16 16
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 7
+http://go.mail.ru/search 3 3
+http://www.avto25.ru/services/avtoshop/oborud_service/tech/ 2 2
+http://yandex.ua/yandsearch 1 1
+http://prosto.1gb.ru/registered.php 1 1
+http://vehemently.ru/index.php 1 1
+http://pyatigorsk.pulscen.ru/firms/98394252/contacts 1 1
+http://avtoserviskafe8.1gb.ru 0 174
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 16
+%d0%b0%d0%b2%d1%82%d0%be%d1%81%d0%b5%d1%80%d0%b2%d0%b8%d1%81%d0%bd%d0%be%d0%b5+%d0%be%d0%b1%d0%be%d1%80%d1%83%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5+%d0%b2+%d1%8e%d1%84%d0%be 1
+%d0%a3%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0+%d0%b4%d0%bb%d1%8f+%d0%b7%d0%b0%d0%bf%d1%80%d0%b0%d0%b2%d0%ba%d0%b8+%d0%ba%d0%be%d0%bd%d0%b4%d0%b8%d1%86%d0%b8%d0%be%d0%bd%d0%b5%d1%80%d0%be%d0%b2+acm+3000 1
+%d0%b3%d0%b0%d0%b1%d0%b0%d1%80%d0%b8%d1%82%d0%bd%d1%8b%d0%b5+%d1%80%d0%b0%d0%b7%d0%bc%d0%b5%d1%80%d1%8b+%d1%81%d1%82%d0%b0%d0%bf%d0%b5%d0%bb%d1%8f+%d0%b4%d0%bb%d1%8f+%d0%b0%d0%b2%d1%82%d0%be 1
+%d0%bf%d1%80%d0%b5%d0%b4%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d1%81%d1%82%d0%b2%d0%b0 1
+%d0%ba%d0%be%d0%bc%d0%bf%d1%80%d0%b5%d1%81%d1%81%d0%be%d1%80%d1%8b+880%d0%bb+%d0%bf%d1%80%d0%be%d0%b8%d0%b7%d0%b2%d0%be%d0%b4%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be%d1%81%d1%82%d1%8c+%d1%80%d0%b5%d1%81%d1%81%d0%b8%d0%b2%d0%b5%d1%80+270+%d0%bb%d0%b8%d1%82%d1%80%d0%be%d0%b2+%d0%b7%d0%b0+37000+%d1%80%d1%83%d0%b1%d0%bb%d0%b5%d0%b9 1
+%d0%b0%d0%b2%d1%82%d0%be+%d1%81%d1%82%d0%b0%d0%bf%d0%b5%d0%bb%d1%8c+%d0%b2%d0%b5%d0%ba%d1%82%d0%be%d1%80 1
+%d0%ba%d1%83%d0%b7%d0%be%d0%b2%d0%bd%d1%8b%d0%b5+%d1%81%d1%82%d0%b5%d0%bd%d0%b4%d1%8b 1
+td+df6105n-ae%26t 1
+%d0%b7%d0%b0%d0%b6%d0%b8%d0%bc+%d0%b4%d0%bb%d1%8f+%d1%81%d1%82%d0%b0%d0%bf%d0%b5%d0%bb%d1%8f 1
+%d0%ba%d0%b0%d0%ba+%d1%81%d0%b4%d0%b5%d0%bb%d0%b0%d1%82%d1%8c+%d1%81%d1%82%d0%b0%d0%bf%d0%b5%d0%bb%d1%8c 1
+tlt250at%2f380+%d0%9f%d0%be%d0%b4%d1%8a%d0%b5%d0%bc%d0%bd%d0%b8%d0%ba+2-%d1%85+%d1%81%d1%82%d0%be%d0%b5%d1%87%d0%bd%d1%8b%d0%b9+%d1%8d%d0%bb%d0%b5%d0%ba%d1%82%d1%80%d0%be%d0%b3%d0%b8%d0%b4%d1%80%d0%b0%d0%b2%d0%bb%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9+%d0%b3%2f%d0%bf+5%d1%82.+launch+c+%d0%b2%d0%b5%d1%80%d1%85%d0%bd%d0%b5%d0%b9+%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d0%b5%d0%b9+tlt250at%2f380 1
+%d0%b0%d0%b2%d1%82%d0%be%d1%81%d0%b5%d1%80%d0%b2%d0%b8%d1%81%d1%8b 1
+%d0%90%d0%b2%d1%82%d0%be%d1%81%d0%b5%d1%80%d0%b2%d0%b8%d1%81%d0%bd%d0%be%d0%b5+%d0%be%d0%b1%d0%be%d1%80%d1%83%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5+%d0%b2+%d0%bf%d1%8f%d1%82%d0%b8%d0%b3%d0%be%d1%80%d1%81%d0%ba%d0%b5 1
+giuliano+%d0%bf%d0%be%d0%b4%d1%8a%d1%91%d0%bc%d0%bd%d0%b8%d0%ba 1
+%d1%81%d0%b4%d0%b2%d0%b8%d0%b6%d0%bd%d1%8b%d0%b5+%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%bd%d1%8b 1
+%d0%b4%d0%b8%d1%81%d0%ba%d0%be%d0%bf%d1%80%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b9+%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%ba 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 53
+%d0%b4%d0%bb%d1%8f 3
+%d1%81%d1%82%d0%b0%d0%bf%d0%b5%d0%bb%d1%8c 2
+%d0%b2 2
+%d0%b0%d0%b2%d1%82%d0%be 2
+%d0%be%d0%b1%d0%be%d1%80%d1%83%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5 2
+tlt250at%2f380 2
+%d1%81%d1%82%d0%b0%d0%bf%d0%b5%d0%bb%d1%8f 2
+2-%d1%85 1
+giuliano 1
+%d0%b2%d0%b5%d1%80%d1%85%d0%bd%d0%b5%d0%b9 1
+acm 1
+%d1%80%d0%b5%d1%81%d1%81%d0%b8%d0%b2%d0%b5%d1%80 1
+%d1%81%d1%82%d0%b5%d0%bd%d0%b4%d1%8b 1
+%d0%b7%d0%b0%d0%b6%d0%b8%d0%bc 1
+%d1%80%d1%83%d0%b1%d0%bb%d0%b5%d0%b9 1
+%d1%80%d0%b0%d0%b7%d0%bc%d0%b5%d1%80%d1%8b 1
+%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d0%b5%d0%b9 1
+%d0%b7%d0%b0%d0%bf%d1%80%d0%b0%d0%b2%d0%ba%d0%b8 1
+%d1%81%d1%82%d0%be%d0%b5%d1%87%d0%bd%d1%8b%d0%b9 1
+5%d1%82. 1
+880%d0%bb 1
+%d0%bf%d1%80%d0%b5%d0%b4%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d1%81%d1%82%d0%b2%d0%b0 1
+%d0%bf%d1%80%d0%be%d0%b8%d0%b7%d0%b2%d0%be%d0%b4%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be%d1%81%d1%82%d1%8c 1
+3000 1
+%d0%b2%d0%b5%d0%ba%d1%82%d0%be%d1%80 1
+c 1
+%d0%ba%d0%be%d0%bd%d0%b4%d0%b8%d1%86%d0%b8%d0%be%d0%bd%d0%b5%d1%80%d0%be%d0%b2 1
+%d1%8d%d0%bb%d0%b5%d0%ba%d1%82%d1%80%d0%be%d0%b3%d0%b8%d0%b4%d1%80%d0%b0%d0%b2%d0%bb%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9 1
+df6105n-ae%26t 1
+%d0%b3%2f%d0%bf 1
+td 1
+%d0%a3%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0 1
+%d1%8e%d1%84%d0%be 1
+%d0%ba%d1%83%d0%b7%d0%be%d0%b2%d0%bd%d1%8b%d0%b5 1
+%d0%b7%d0%b0 1
+%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%bd%d1%8b 1
+%d0%b4%d0%b8%d1%81%d0%ba%d0%be%d0%bf%d1%80%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b9 1
+%d0%bf%d1%8f%d1%82%d0%b8%d0%b3%d0%be%d1%80%d1%81%d0%ba%d0%b5 1
+%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%ba 1
+%d0%90%d0%b2%d1%82%d0%be%d1%81%d0%b5%d1%80%d0%b2%d0%b8%d1%81%d0%bd%d0%be%d0%b5 1
+launch 1
+37000 1
+%d0%ba%d0%be%d0%bc%d0%bf%d1%80%d0%b5%d1%81%d1%81%d0%be%d1%80%d1%8b 1
+%d0%b3%d0%b0%d0%b1%d0%b0%d1%80%d0%b8%d1%82%d0%bd%d1%8b%d0%b5 1
+%d0%bf%d0%be%d0%b4%d1%8a%d1%91%d0%bc%d0%bd%d0%b8%d0%ba 1
+%d0%9f%d0%be%d0%b4%d1%8a%d0%b5%d0%bc%d0%bd%d0%b8%d0%ba 1
+%d1%81%d0%b4%d0%b2%d0%b8%d0%b6%d0%bd%d1%8b%d0%b5 1
+%d0%b0%d0%b2%d1%82%d0%be%d1%81%d0%b5%d1%80%d0%b2%d0%b8%d1%81%d1%8b 1
+%d0%ba%d0%b0%d0%ba 1
+%d1%81%d0%b4%d0%b5%d0%bb%d0%b0%d1%82%d1%8c 1
+%d0%bb%d0%b8%d1%82%d1%80%d0%be%d0%b2 1
+%d0%b0%d0%b2%d1%82%d0%be%d1%81%d0%b5%d1%80%d0%b2%d0%b8%d1%81%d0%bd%d0%be%d0%b5 1
+270 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+401 126 65268
+303 101 0
+301 7 2632
+404 344 267566
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 34
+/index.php/2011-11-21-15-43-43/60-rs/rs/hunter-hawkeye-3d 3 -
+/sitemap.xml 1 -
+/index.php/2011-11-21-15-43-43/58-rs/rs/hunter-pa130-dsp706 4 -
+/index.php/2011-11-21-15-43-43/11-2011-12-14-13-38-50 2 -
+/index.php/2011-11-21-15-43-43/98-rs/rs 5 -
+/index.php/2011-11-21-15-43-43/30-2011-11-23-11-35-00/----titan-5700/19-titan-5700 3 -
+/index.php/2011-11-21-15-43-43/50-2011-11-23-11-34-08/aeat-885it 1 -
+/wp-admin/ 1 -
+/index.php/2011-11-21-15-43-43 6 -
+/awstats/ 1 http://prosto.1gb.ru/registered.php
+/index.php/2011-11-21-15-43-43/58-2011-12-14-12-25-35/hunter-pa130-dsp706------ 3 -
+/index.php/2011-11-21-15-43-43/137-rs/rs/wa140-26le02-401lz2 4 -
+/index.php/2011-11-21-15-43-43/26-2011-11-23-11-35-34/aircast---4-270-l75 1 -
+/index.php/2011-11-21-15-43-43/53-2011-11-23-11-34-08/aeat-bl555acap2007 1 -
+/index.php/images/inozemcevo.png 1 -
+/index.php/2011-11-21-15-43-43/60-2011-12-14-12-25-35/hunter-hawkeye----3d-- 5 -
+/index.php/2011-11-21-15-43-43/44-2011-11-23-11-34-48/t4 1 -
+/index.php/2011-11-21-15-43-43/12-2011-11-23-11-34-48 1 -
+/index.php/2011-11-21-15-43-43/30-2011-11-23-11-35-00/----titan-5700 5 -
+/index.php/2011-11-21-15-43-43/52-2011-11-23-11-34-08/aeat-dst910b-220 2 -
+/templates/as002032-free/images/bg.header.row4.png 235 http://xn--80aaagabsufuc5b1amej.xn--p1ai/
+/index.php/2011-11-21-15-43-43/62-2011-11-23-11-34-08/hunter-tcx525-----24- 2 -
+/index.php/2011-11-21-15-43-43/59-rs/rs/hunter-pa100-dsp508 3 -
+/%D0%B0%D0%B2%D1%82%D0%BE%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BA%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7.%D1%80%D1%84/shared/clipper_gruzi.xls 1 http://xn--80aaagabsufuc5b1amej.xn--p1ai/
+/sharedclipper_gruzi.xls 14 http://xn--80aaagabsufuc5b1amej.xn--p1ai/index.php/2011-12-14-13-33-12
+/index.php/2011-11-21-15-43-43/41-2011-12-14-13-55-44/acm-3000 4 -
+/index.php/2011-11-21-15-43-43/55-2011-11-23-11-34-48/tlt-240sb-380--220---4-launch 1 -
+/index.php/2011-12-14-12-13-32 3 -
+/index.php/2011-11-21-15-43-43/33-2011-12-14-13-38-50/--tip-top 3 -
+/index.php/2011-11-21-15-43-43/59-2011-12-14-12-25-35/hunter-pa100-dsp508------ 4 -
+/index.php/2011-11-21-15-43-43/54-2011-11-23-11-34-48/tlt235sb380--220--2----35---launch 2 -
+/index.php/2011-11-21-15-43-43/51-2011-11-23-11-34-08/aeat-890it 2 -
+/index.php/2011-11-21-15-43-43/31-2011-11-23-11-35-00/----titan-5400 2 -
+/index.php/2011-11-21-15-43-43/60-rs/hunter-hawkeye-3d 17 http://yandex.ru/yandsearch
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 57
+77.75.13.115 150 1210 77040855 20120718000649
+31.23.205.191 95 925 9438078 20120723221620
+84.51.195.189 92 256 5881902 20120731175212
+77.75.11.139 62 399 6650405 20120723221555
+217.13.219.239 55 223 5410259 20120724170850
+77.75.11.206 42 566 29105123 20120724154404
+77.75.13.192 26 417 22653049 20120716174220
+31.180.216.12 26 66 2974027 20120729004127
+188.114.51.95 24 338 12896680 20120714182655
+85.115.248.24 18 53 2571323 20120716201305
+31.40.215.54 1 1 27862 20120716214756
+212.74.230.242 2 34 2100363 20120724101831
+85.25.9.83 1 29 1373034 20120720100122
+77.105.131.75 15 52 2490180 20120719155439
+81.95.138.58 2 34 2015770 20120725162943
+213.87.123.46 2 38 2401710 20120719130713
+217.118.79.19 4 34 3286757 20120723101045
+31.180.235.119 4 36 2161558 20120730173358
+91.193.230.1 1 37 1313936 20120719084534
+213.79.70.117 1 7 143811 20120724150541
+176.195.47.20 0 1 1443 
+176.9.146.140 1 1 34768 20120718213909
+89.189.185.215 1 1 34773 20120716011743
+91.76.57.37 3 3 93460 20120717070945
+31.202.16.35 1 1 32867 20120726163939
+212.94.13.153 2 33 1407002 20120719121326
+176.195.10.170 0 1 1443 
+62.118.154.234 2 6 978220 20120719220711
+112.133.214.154 4 35 2168664 20120719172544
+109.229.42.152 1 32 1366006 20120729125833
+95.25.88.215 0 1 1443 
+92.112.91.90 1 6 156851 20120721125839
+94.124.241.241 1 31 1379926 20120719215356
+46.63.142.36 0 1 1443 
+77.75.12.236 4 41 2152528 20120729112025
+176.195.245.11 0 1 1443 
+93.120.196.178 1 35 1680513 20120724165231
+188.114.31.35 13 48 1751694 20120725001328
+109.248.91.8 0 1 1443 
+82.138.46.194 2 39 2114738 20120723125155
+46.147.158.203 2 34 2006939 20120721194208
+77.75.9.198 1 41 107294 20120718173150
+176.195.30.187 0 1 1443 
+188.16.193.70 0 1 1443 
+93.124.64.106 1 35 1770836 20120715183540
+95.27.99.181 0 1 1443 
+85.26.234.23 2 34 2032721 20120724145735
+212.13.17.30 2 34 2015224 20120727210633
+176.195.212.125 0 2 2886 
+95.153.175.59 5 42 2234437 20120728221203
+10.0.1.53 6 180 8186315 20120731020331
+77.39.16.99 2 32 1404127 20120718153404
+217.118.79.36 2 10 328280 20120723101111
+212.94.12.200 6 43 1618004 20120731200944
+213.87.138.159 2 34 2034720 20120717135341
+178.125.222.173 1 1 34768 20120720085509
+194.28.69.70 17 17 453467 20120723180306
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 18
+20120714 25 368 14199705 2
+20120715 1 35 1770836 1
+20120716 48 503 26619446 5
+20120717 157 1250 79492647 4
+20120718 60 300 5620617 8
+20120719 56 342 14564780 10
+20120720 18 47 1880173 3
+20120721 3 40 2163790 2
+20120722 1 31 1378101 1
+20120723 188 1431 22455101 7
+20120724 60 754 38186463 8
+20120725 21 89 3945505 3
+20120726 4 25 126501 2
+20120727 2 34 2015224 1
+20120728 6 72 3611095 2
+20120729 31 139 6492561 3
+20120730 7 39 2255192 3
+20120731 21 116 4753960 5
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 8
+5mn-15mn 2
+30s-2mn 11
+15mn-30mn 6
+2mn-5mn 5
+0s-30s 32
+30mn-1h 6
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 62
+/administrator/index.php 258 25238767 0 3
+/index.php 84 2477686 10 13
+/ 70 2434717 40 17
+/index.php/2011-12-14-13-33-12 54 1366213 0 1
+/index.php/2011-12-22-14-39-48 29 693543 0 14
+/media/editors/tinymce/jscripts/tiny_mce/themes/advanced/link.htm 22 54340 0 0
+/index.php/2011-12-20-14-40-49 11 268459 0 0
+/index.php/2011-11-23-21-23-47 11 404694 0 2
+/index.php/2011-12-06-19-41-54 11 259571 0 0
+/index.php/2012-01-20-16-51-42 10 237520 0 0
+/index.php/2012-04-11-10-09-59/72-gruzbal/sbm-855 1 35040 0 0
+/index.php/diskopravi/155-titan-jumbo1 1 25003 0 0
+/index.php/index.php/2011-12-06-20-18-46 1 28299 1 0
+/index.php/2011-12-06-19-41-54/92-nojn/aeat/66-aeat-nojn 1 27365 1 0
+/index.php/2012-01-20-16-51-42/60-rs/hunter-hawkeye-3d 1 36596 0 1
+/index.php/2012-04-11-10-11-09/82-stankavt 1 24877 0 0
+/index.php/2012-04-11-10-11-09/140-vulcanizers 2 46326 0 0
+/index.php/2011-12-06-20-32-49/73-shinlegk 3 75859 0 0
+/index.php/2012-04-11-10-09-59/68-legkbal 5 131740 0 1
+/index.php/siver/131-siver-data/siver-data-manual 2 65734 2 2
+/awstats/ 1 91764 1 1
+/index.php/2011-12-06-19-41-54/65-dvuh 6 143050 0 0
+/index.php/2012-04-11-10-11-09/81-zammasl/maslu 1 24536 0 0
+/index.php/2012-04-11-10-09-59/99-gruzbal/sbm-955-sicam 1 37818 0 0
+/index.php/siver/129-siver-el 1 29004 1 1
+/index.php/2012-04-11-10-11-09/141-vulcanizers/tddb-108-ae-t 1 25755 0 0
+/index.php/2012-04-11-10-12-01 4 108796 0 0
+/index.php/2012-04-18-16-34-04 7 162789 1 1
+/index.php/2012-04-18-16-34-04/90-pre2112134 3 75004 0 2
+/index.php/2011-12-06-19-41-54/55-dvuh/tlt-240sb-380-220-4-launch 2 53492 0 0
+/index.php/siver/126-siver-n 2 61804 2 1
+/index.php/2012-04-11-10-09-59/112-legkbal/hunter-dsp9200 3 76794 0 0
+/index.php/2012-04-11-10-11-09/80-zammasl/maslr 1 23879 0 0
+/index.php/diskopravi 6 143994 0 0
+/index.php/2012-04-11-10-11-09/77-generaz 1 25219 0 0
+/shared/clipper_gruzi.xls 5 279040 0 2
+/index.php/2012-04-11-10-11-09/79-zammasl 1 23171 0 0
+/index.php/2011-12-06-20-32-49 9 210919 0 0
+/index.php/2011-12-06-19-41-54/57-dvuh/tlt-250t380-2-5-launch/43-tlt-250t380-2-5-launch 1 30579 1 0
+/index.php/2012-04-11-10-09-59/113-legkbal/hunter-gsp9600 2 67916 0 0
+/index.php/2012-04-11-10-09-59/114-legkbal/hunter-gsp9700 1 32148 0 1
+/index.php/2012-04-11-10-09-10 7 199157 1 1
+/index.php/siver 7 170247 0 0
+/index.php/siver/125-siver-b 1 31010 1 0
+/index.php/2012-04-11-10-09-59 10 233680 0 0
+/index.php/2012-04-11-10-11-09 7 169407 0 2
+/index.php/2011-12-06-19-41-54/44-dvuh/t4 4 103380 0 0
+/index.php/2012-01-20-16-51-42/59-rs/hunter-pa100-dsp508 1 26620 0 0
+/index.php/diskopravi/143-titan-5500 2 55254 1 0
+/administrator/ 7 60436 3 0
+/index.php/2011-12-06-20-32-49/74-shingruz 1 23133 0 0
+/media/editors/tinymce/jscripts/tiny_mce/themes/advanced/image.htm 9 35622 0 0
+/index.php/2011-12-06-19-41-54/56-dvuh/tlt-240sc-380-220-2-4-launch 1 31365 1 1
+/index.php/2012-04-18-16-34-04/139-td61210-ae-t 1 24924 0 0
+/index.php/2012-04-11-10-09-59/69-gruzbal 2 47088 0 0
+/index.php/2011-12-06-20-18-46 6 169734 0 1
+/index.php/2012-04-11-10-11-09/78-bort 1 25321 0 0
+/index.php/component/content/ 1 40495 1 0
+/index.php/siver/133-krugi 1 27862 1 1
+/index.php/diskopravi/147-titan-14-00s 1 24636 0 0
+/index.php/2012-04-11-10-11-09/142-vulcanizers/tddb-088n-ae-t-vulc 1 25912 0 0
+/index.php/2011-12-06-19-41-54/71-chet/giuliano-fpl-6740-- 1 24890 1 1
+END_SIDER

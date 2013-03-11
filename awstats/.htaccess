@@ -1,0 +1,8 @@
+RewriteEngine Off
+
+AuthName "AWStats statistics"
+AuthType Basic
+AuthUserFile /home/virtwww/w_avtoserviskafe8_945ed433/http/awstats/.htpasswd  
+Require valid-user
+
+DirectoryIndex index.cgi

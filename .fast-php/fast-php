@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export PHP_FCGI_MAX_REQUESTS=500
+exec /usr/local/bin/php -d sendmail_path='/usr/bin/sendmail -t -i -f avtoserviskafe8_945ed433@1gb.ru' -c /home/virtwww/w_avtoserviskafe8_945ed433/.php:/etc/php
