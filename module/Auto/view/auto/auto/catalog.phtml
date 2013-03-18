@@ -56,6 +56,18 @@ $this->headTitle($title);
 	<!---------------------------------/Галерея----------------------------->
 
 	<div style="clear: both"></div>
+
+	<ul class="firm_gal">
+		<?php
+		foreach ($firms_all as $f_key => $f_item) {
+			if($f_key < 6) {
+				echo '<li>';
+					echo '<a href="/catalog/firmlist/' . $f_item['id'] . '"><img src="/images/' . $f_item['image'] . '"></a>';
+				echo '</li>';
+			}
+		}
+		?>
+	</ul>
 	<hr/>
 
 	<!---------------------------------Центр---------------------------------->

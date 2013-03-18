@@ -40,29 +40,47 @@ $this->headTitle($title);
 	<!---------------------------------/Галерея----------------------------->
 
 	<div style="clear: both"></div>
+	<?php
+	if(isset($firm_res)) {
+		echo '<ul class="firm_gal">';
+			foreach ($firm_res as $f_key => $f_item) {
+				if($f_key < 6) {
+					echo '<li>';
+					echo '<img src="/images/' . $f_item['image'] . '" onclick="firm_toggle('. $f_item['id'] .');">';
+					echo '</li>';
+				}
+			}
+		echo '</ul>';
+	}
+	?>
 	<hr/>
 
-	<!---------------------------------Центр---------------------------------->
-	<?php
-			foreach($product_all as $key => $ha) {
-				echo '<ul class="category_list">';
-				echo '<li>';
-				echo "<h3>{$ha['title']}</h3>";
-				echo '<a href="/catalog' . $ha['link'] . '">Перейти...</a>';
-				echo '</li>';
-				echo '<li>';
-				echo "<h4>{$ha['desc']}</h4>";
-				echo '</li>';
-				echo '<li>';
-				if ($ha['image'] != '') {
-					echo '<img src="/images/' . $ha['image'] .'">';
-				} else {
-					echo '<img style="background: #ccc;" src="/images/menu_logo_TK.png">';
+	<div id="list_center">
+		<!---------------------------------Центр---------------------------------->
+		<?php
+				foreach($product_all as $key => $ha) {
+					if(isset ($ha['firm_id'])) {
+						echo '<ul class="category_list firm_' . $ha['firm_id'] . '">';
+					} else {
+						echo '<ul class="category_list">';
+					}
+					echo '<li>';
+					echo "<h3>{$ha['title']}</h3>";
+					echo '<a href="/catalog' . $ha['link'] . '">Перейти...</a>';
+					echo '</li>';
+					echo '<li>';
+					echo "<h4>{$ha['desc']}</h4>";
+					echo '</li>';
+					echo '<li>';
+					if ($ha['image'] != '') {
+						echo '<img src="/images/' . $ha['image'] .'">';
+					} else {
+						echo '<img style="background: #ccc;" src="/images/menu_logo_TK.png">';
+					}
+					echo '</li>';
+					echo '</ul>';
 				}
-				echo '</li>';
-				echo '</ul>';
-			}
-	?>
-	<!---------------------------------/Центр---------------------------------->
-
+		?>
+		<!---------------------------------/Центр---------------------------------->
+	</div>
 </div>

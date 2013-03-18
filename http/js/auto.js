@@ -99,3 +99,8 @@ function top_slider_left () {
 	clearInterval(top_slider_id);
 	top_slider_id = setInterval(top_slider_right, 7000);
 };
+
+function firm_toggle(id) {
+	$('#list_center ul').slideUp();
+	$('#list_center ul.firm_' + id).slideDown();
+}

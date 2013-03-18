@@ -25,6 +25,8 @@ var CKBUILDER_CONFIG = {
 	],
 	plugins : {
 		'about' : 1,
+
+
 		'a11yhelp' : 1,
 		'dialogadvtab' : 1,
 		'basicstyles' : 1,
@@ -44,6 +46,7 @@ var CKBUILDER_CONFIG = {
 		'filebrowser' : 1,
 		'find' : 1,
 		'flash' : 1,
+
 		'floatingspace' : 1,
 		'font' : 1,
 		'forms' : 1,

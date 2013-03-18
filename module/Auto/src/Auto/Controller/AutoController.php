@@ -169,42 +169,50 @@ class AutoController extends AbstractActionController
 		if (!$this->zfcUserAuthentication()->hasIdentity()) {
 			return $this->redirect()->toRoute('zfcuser/login');
 		}
-
-		if(isset($_POST['cat_edit'])) {
-			$id = $_POST['cat_edit'];
-			$aCategoryUpd['title'] = $_POST['title'];
-			$aCategoryUpd['description'] = $_POST['description'];
-			$aCategoryUpd['ref_id'] = $_POST['ref_id'];
-			$aCategoryUpd['image'] = $_POST['image'];
-			if($this->getAutoTable()->setCategory($id, $aCategoryUpd)) {
+		if(isset($_POST['sub_btn'])) {
+			if($_POST['sub_btn'] == 'Закрыть') {
 				return $this->redirect()->toUrl('/admin');
-			}
-		}
-
-		if(isset($_POST['firm_edit'])) {
-			$id = $_POST['firm_edit'];
-			$aFirmUpd['title'] = $_POST['title'];
-			$aFirmUpd['description'] = $_POST['description'];
-			$aFirmUpd['image'] = $_POST['image'];
-			if($this->getAutoTable()->setFirm($id, $aFirmUpd)) {
-				return $this->redirect()->toUrl('/admin');
-			}
-		}
-
-		if(isset($_POST['prod_edit'])) {
-			$id = $_POST['prod_edit'];
-			$aProdUpd['title'] = $_POST['title'];
-			$aProdUpd['description'] = $_POST['description'];
-			$aProdUpd['image'] = $_POST['image'];
-			$aProdUpd['ref_id'] = $_POST['ref_id'];
-			$aProdUpd['firm_id'] = $_POST['firm_id'];
-			if($_POST['is_on_main'] == 'on'){
-				$aProdUpd['is_on_main'] = 1;
 			} else {
-				$aProdUpd['is_on_main'] = 0;
-			}
-			if($this->getAutoTable()->setProduct($id, $aProdUpd)) {
-				return $this->redirect()->toUrl('/admin');
+				if(isset($_POST['cat_edit'])) {
+					$id = $_POST['cat_edit'];
+					$aCategoryUpd['title'] = $_POST['title'];
+					$aCategoryUpd['description'] = $_POST['description'];
+					$aCategoryUpd['ref_id'] = $_POST['ref_id'];
+					$aCategoryUpd['image'] = $_POST['image'];
+					$this->getAutoTable()->setCategory($id, $aCategoryUpd);
+					$id = $_POST['cat_edit'];
+					unset($_POST);
+					$_POST['cat_id'] = $id;
+				}
+
+				if(isset($_POST['firm_edit'])) {
+					$id = $_POST['firm_edit'];
+					$aFirmUpd['title'] = $_POST['title'];
+					$aFirmUpd['description'] = $_POST['description'];
+					$aFirmUpd['image'] = $_POST['image'];
+					$this->getAutoTable()->setFirm($id, $aFirmUpd);
+					$id = $_POST['firm_edit'];
+					unset($_POST);
+					$_POST['firm_id'] = $id;
+				}
+
+				if(isset($_POST['prod_edit'])) {
+					$id = $_POST['prod_edit'];
+					$aProdUpd['title'] = $_POST['title'];
+					$aProdUpd['description'] = $_POST['description'];
+					$aProdUpd['image'] = $_POST['image'];
+					$aProdUpd['ref_id'] = $_POST['ref_id'];
+					$aProdUpd['firm_id'] = $_POST['firm_id'];
+					if($_POST['is_on_main'] == 'on'){
+						$aProdUpd['is_on_main'] = 1;
+					} else {
+						$aProdUpd['is_on_main'] = 0;
+					}
+					$this->getAutoTable()->setProduct($id, $aProdUpd);
+					$id = $_POST['prod_edit'];
+					unset($_POST);
+					$_POST['prod_id'] = $id;
+				}
 			}
 		}
 
@@ -299,7 +307,16 @@ class AutoController extends AbstractActionController
 			$category_all[$key]['desc'] = $category->description;
 			$category_all[$key]['image'] = $category->image;
 		}
+
+		$firms_list = $this->getAutoTable()->getFirmsAll();
+		foreach($firms_list as $key => $firms) {
+			$firms_all[$key]['title'] = $firms->title;
+			$firms_all[$key]['id'] = $firms->id;
+			$firms_all[$key]['desc'] = $firms->description;
+			$firms_all[$key]['image'] = $firms->image;
+		}
 		return new ViewModel(array(
+			'firms_all' => $firms_all,
 			'category_all' => $category_all,
 			'cat_list' => $cat_list,
 		));
@@ -327,8 +344,23 @@ class AutoController extends AbstractActionController
 					$product_all[$key]['desc'] = $this->crop_str($product->description,300);
 					$product_all[$key]['image'] = $product->image;
 					$product_all[$key]['firm_id'] = $product->firm_id;
+					$firm_arr[] = $product->firm_id;
 				}
 			}
+		}
+
+		if(isset($firm_arr)) {
+			$firm = $this->getAutoTable()->getFirmsAll();
+			foreach($firm as $key => $firms) {
+				if (in_array($firms->id, $firm_arr)) {
+					$firms_all[$key]['title'] = $firms->title;
+					$firms_all[$key]['id'] = $firms->id;
+					$firms_all[$key]['desc'] = $firms->description;
+					$firms_all[$key]['image'] = $firms->image;
+				}
+			}
+		} else {
+			$firms_all = null;
 		}
 
 		$category_list = $this->getAutoTable()->getCategoryAll();
@@ -338,11 +370,45 @@ class AutoController extends AbstractActionController
 			$category_all[$category->id]['desc'] = $this->crop_str($category->description, 300);
 			$category_all[$category->id]['image'] = $category->image;
 		}
-//		echo '<pre>';
-//		print_r($product_all[0]['image']);
-//		echo '<pre>';die;
 		return new ViewModel(array(
 			'category' => $category_all[$id],
+			'product_all' => $product_all,
+			'firm_res' => $firms_all,
+			'cat_list' => $cat_list,
+		));
+	}
+
+	public function firmlistAction()
+	{
+		$id = (int) $this->params()->fromRoute('id', 0);
+		$product_list = $this->getAutoTable()->getProductsByFirmId($id);
+
+		foreach($product_list as $key => $product) {
+			if(isset($product->title)) {
+				$product_all[$key]['title'] = $product->title;
+				$product_all[$key]['link'] = '/product/' . $product->id;
+				$product_all[$key]['desc'] = $this->crop_str($product->description,300);
+				$product_all[$key]['image'] = $product->image;
+				$product_all[$key]['firm_id'] = $product->firm_id;
+			}
+		}
+
+		$firm = $this->getAutoTable()->getFirm($id);
+		foreach($firm as $firm_value) {
+			$firm_res[$firm_value->id]['title'] = $firm_value->title;
+			$firm_res[$firm_value->id]['link'] = $firm_value->id;
+			$firm_res[$firm_value->id]['desc'] = $firm_value->description;
+			$firm_res[$firm_value->id]['image'] = $firm_value->image;
+		}
+
+		$category_list = $this->getAutoTable()->getCategoryAll();
+		foreach($category_list as $key => $category) {
+			$cat_list[$key]['title'] = $category->title;
+			$cat_list[$key]['link'] = '/list/' . $category->id;
+		}
+
+		return new ViewModel(array(
+			'firm_res' => $firm_res[$id],
 			'product_all' => $product_all,
 			'cat_list' => $cat_list,
 		));

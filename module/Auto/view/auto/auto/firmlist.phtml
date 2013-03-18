@@ -1,0 +1,68 @@
+<?php
+// module/Album/view/album/album/list.phtml:
+
+$title = 'ООО "Представительство TECH" - ' . $firm_res["title"];
+$this->headTitle($title);
+?>
+
+<div class="center_catalog">
+
+	<!---------------------------------Левое меню----------------------------->
+	<div class="left_menu">
+		<h4>КАТАЛОГ</h4>
+		<ul>
+			<?php
+			foreach ($cat_list as $key => $cl) {
+				if($key<7){
+					echo '<li><a href="/catalog' . $cl['link'] . '">' . $cl['title'] . '</a></li>';
+				}
+			}
+			?>
+			<li style=" margin-top: 5px;"><a href="/catalog" style="color: #fff;"><b>Весь каталог...</b></a></li>
+		</ul>
+	</div>
+	<!---------------------------------/Левое меню----------------------------->
+
+	<div class="breadcrumb_auto"><a href="/catalog">Каталог</a> &larr; </div>
+
+	<div class="main_left_menu_text_cat">
+		<h3 id='category_title'><?=$firm_res['title'] ?></h3>
+		<br>
+		<p id="category_desc"><?=$firm_res['desc'] ?></p>
+	</div>
+
+	<!---------------------------------Галерея----------------------------->
+	<div class="hit_prod" style="margin-left: 20px;">
+		<?php
+				echo '<img src="/images/' . $firm_res['image'] . '">';
+		?>
+	</div>
+	<!---------------------------------/Галерея----------------------------->
+
+	<div style="clear: both"></div>
+	<hr/>
+
+	<!---------------------------------Центр---------------------------------->
+	<?php
+			foreach($product_all as $key => $ha) {
+				echo '<ul class="category_list">';
+				echo '<li>';
+				echo "<h3>{$ha['title']}</h3>";
+				echo '<a href="/catalog' . $ha['link'] . '">Перейти...</a>';
+				echo '</li>';
+				echo '<li>';
+				echo "<h4>{$ha['desc']}</h4>";
+				echo '</li>';
+				echo '<li>';
+				if ($ha['image'] != '') {
+					echo '<img src="/images/' . $ha['image'] .'">';
+				} else {
+					echo '<img style="background: #ccc;" src="/images/menu_logo_TK.png">';
+				}
+				echo '</li>';
+				echo '</ul>';
+			}
+	?>
+	<!---------------------------------/Центр---------------------------------->
+
+</div>
