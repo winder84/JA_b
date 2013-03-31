@@ -89,6 +89,18 @@ class AutoTable
 		return $results;
 	}
 
+	public function getProductsByFirmId($ref_id = 0) {
+		$adapter = $this->adapter;
+		$sql = new Sql($adapter);
+		$select = $sql->select();
+		$select->from('product');
+		$select->where(array('firm_id' => $ref_id));
+
+		$selectString = $sql->getSqlStringForSqlObject($select);
+		$results = $adapter->query($selectString, $adapter::QUERY_MODE_EXECUTE);
+		return $results;
+	}
+
 	public function getCategoryAll() {
 		$adapter = $this->adapter;
 		$sql = new Sql($adapter);

@@ -710,3 +710,20 @@ body {
 .product_desc img {
 	margin: 20px 30px 10px 10px;
  }
+
+.firm_gal {
+	list-style: none;
+	margin-left: 200px;
+}
+
+.firm_gal li {
+	display: inline-block;
+	width: 120px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+.firm_gal li img {
+	max-height: 70px;
+	cursor: pointer;
+}

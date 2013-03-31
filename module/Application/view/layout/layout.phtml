@@ -27,7 +27,7 @@
 
 	</script>
 		<div class="main">
-			<div class="container">
+			<div class="container" style="width: 1170px;">
 				<div class="menu_auto">
 					<div class="menu_logo"></div>
 					<a class="menu_logo_text">TECH <span>KMV.RU</span></a>
@@ -143,8 +143,10 @@
 		{
 			var editor = CKEDITOR.replace('q_text',
 					{
-						// если нужно загружать файлы
-						filebrowserUploadUrl: '/ckeditor_uploader.php',
+						filebrowserBrowseUrl : '/ckeditor/pdw_file_browser/index.php?editor=ckeditor',
+						filebrowserImageBrowseUrl : '/ckeditor/pdw_file_browser/index.php?editor=ckeditor&filter=image',
+						filebrowserFlashBrowseUrl : '/ckeditor/pdw_file_browser/index.php?editor=ckeditor&filter=flash',
+						filebrowserUploadUrl: '/uploader/upload.php',
 						toolbar: 'Full'
 					});
 		});
