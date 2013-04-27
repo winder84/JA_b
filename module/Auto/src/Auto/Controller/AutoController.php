@@ -20,7 +20,7 @@ class AutoController extends AbstractActionController
 		$category_list = $this->getAutoTable()->getCategoryList();
 
 		foreach($category_list as $key => $category) {
-			$category_all[$key]['link'] = '/list/' . $category->id;
+			$category_all[$key]['link'] = '/list/' . $category->id; 
 			$category_all[$key]['title'] = $category->title;
 			$category_all[$key]['id'] = $category->id;
 			$category_all[$key]['desc'] = $category->description;

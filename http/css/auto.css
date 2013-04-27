@@ -767,6 +767,7 @@ body {
 .firm_gal li img {
 	max-height: 70px;
 	cursor: pointer;
+<<<<<<< HEAD
 }
 
 .onas_text {
@@ -789,4 +790,6 @@ body {
 	background: url("../images/IMAG0133.jpg") no-repeat;
 	width: 640px;
 	height: 365px;
+=======
+>>>>>>> 1cc1fd140030fd17698bd3b7fe49b64276620597
 }
