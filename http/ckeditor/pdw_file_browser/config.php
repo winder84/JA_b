@@ -25,7 +25,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-if(!isset($_SESSION)){ session_start();}  
 
 /*
  * Uncomment lines below to enable PHP error reporting and displaying PHP errors.
@@ -94,7 +93,7 @@ $viewLayout = 'tiles';
  * en.php file and translate the lines after the =>
  *
  */
-$defaultLanguage = 'en';
+$defaultLanguage = 'ru';
 
 /*
  * ALLOWED ACTIONS
@@ -162,7 +161,7 @@ $editor = isset($_GET["editor"]) ? $_GET["editor"] : ''; // If you want to use t
  * 
  */
 // Maximum file size
-$max_file_size_in_bytes = 1048576; // 1MB in bytes
+$max_file_size_in_bytes = 2097152; // 2MB in bytes
 
 // Characters allowed in the file name (in a Regular Expression format)               
 $valid_chars_regex = '.A-Z0-9_ !@#$%^&()+={}\[\]\',~`-';
@@ -198,6 +197,7 @@ $absolute_url_disabled = FALSE; // When TRUE changing from absolute to relative 
 
 
 define('STARTINGPATH', DOCUMENTROOT . $uploadpath); //DON'T EDIT
+
 
 //Check if upload folder exists
 if(!@is_dir(STARTINGPATH)) die('Upload folder doesn\'t exist or $uploadpath in config.php is set wrong!');

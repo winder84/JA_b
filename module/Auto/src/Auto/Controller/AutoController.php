@@ -18,6 +18,53 @@ class AutoController extends AbstractActionController
 	public function indexAction()
 	{
 		$category_list = $this->getAutoTable()->getCategoryList();
+
+		foreach($category_list as $key => $category) {
+			$category_all[$key]['link'] = '/list/' . $category->id;
+			$category_all[$key]['title'] = $category->title;
+			$category_all[$key]['id'] = $category->id;
+			$category_all[$key]['desc'] = $category->description;
+			$category_all[$key]['image'] = $category->image;
+			$category_all[$key]['ref_id'] = $category->ref_id;
+		}
+
+		$firms_list = $this->getAutoTable()->getFirmsAll();
+		foreach($firms_list as $key => $firms) {
+			$firms_all[$key]['title'] = $firms->title;
+			$firms_all[$key]['id'] = $firms->id;
+			$firms_all[$key]['desc'] = $firms->description;
+			$firms_all[$key]['image'] = $firms->image;
+			$firms_all[$key]['link'] = '/firmlist/' . $firms->id;
+		}
+
+		return new ViewModel(array(
+			'hitauto' => $this->getAutoTable()->getHitAuto(),
+			'cat_list' => $category_all,
+			'firms_all' => $firms_all,
+		));
+	}
+
+	public function onasAction()
+	{
+		$category_list = $this->getAutoTable()->getCategoryList();
+		foreach($category_list as $key => $category) {
+			$category_all[$key]['link'] = '/list/' . $category->id;
+			$category_all[$key]['title'] = $category->title;
+			$category_all[$key]['id'] = $category->id;
+			$category_all[$key]['desc'] = $category->description;
+			$category_all[$key]['image'] = $category->image;
+			$category_all[$key]['ref_id'] = $category->ref_id;
+		}
+
+		return new ViewModel(array(
+			'hitauto' => $this->getAutoTable()->getHitAuto(),
+			'cat_list' => $category_all,
+		));
+	}
+
+	public function contactsAction()
+	{
+		$category_list = $this->getAutoTable()->getCategoryList();
 		foreach($category_list as $key => $category) {
 			$cat_list[$key]['title'] = $category->title;
 			$cat_list[$key]['link'] = '/list/' . $category->id;

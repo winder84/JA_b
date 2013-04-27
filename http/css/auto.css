@@ -28,10 +28,12 @@ body {
 .menu_logo_text {
 	display: inline-block;
 	vertical-align: top;
-	margin: 30px 0 0 10px;
+	margin: 10px 0 0 10px;
 	font-family: Corbil;
 	color: #fff;
 	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
 }
 
 .menu_logo_text span {
@@ -40,12 +42,12 @@ body {
 }
 
 .menu_text {
-	width: 100px;
+	width: 120px;
 	display: inline-block;
 	font-family: Tahoma;
 	font-size: 12px;
 	line-height: 12px;
-	margin: 20px 100px 0 30px;
+	margin: 20px 40px 0 60px;
 	color: #999;
 	vertical-align: top;
 }
@@ -64,11 +66,12 @@ body {
 	vertical-align: top;
 	display: inline-block;
 	height: 60px;
-	padding-right: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
 	font-family: "Tahoma";
-	font-size: 12px;
+	font-size: 15px;
 	color: #666;
-	padding-top: 5px;
+	padding-top: 18px;
 	vertical-align: top;
 }
 
@@ -80,10 +83,6 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0;
-}
-
-.menu_block a {
-	padding-top: 18px;
 }
 
 .current {
@@ -105,8 +104,6 @@ body {
 }
 
 .center_index {
-	background: url("../images/main_center_bg.png") no-repeat;
-	padding: 30px 0 0 0;
 	overflow: hidden;
 	margin: -47px 0 -10px 0;
 }
@@ -249,18 +246,28 @@ body {
 	height: 150px;
 	margin-bottom: 50px;
 	color: #fff;
-	text-align: right;
+	text-align: left;
+}
+
+.left_menu h3 {
+
+	font-size: 18px;
+	line-height: 18px;
+	font-family: Corbil;
+	margin: 10px 0 10px 25px;
+	text-align: left;
 }
 
 .left_menu ul {
 	list-style: none;
+	height: 125px;
 }
 
 .left_menu ul li {
 	line-height: 14px;
 }
 .left_menu ul li a {
-	color: #ccc;
+	color: #fff;
 	font-size: 12px;
 }
 
@@ -351,6 +358,39 @@ body {
 	margin: 5px 5px 0 0;
 }
 
+.firm_prod {
+	width: 319px;
+	height: 165px;
+	float: left;
+	background: url("../images/hit_prod_podl.png");
+	margin: 10px 0 0 0;
+}
+
+.firm_prod img {
+	position: absolute;
+	width: 295px;
+	height: 155px;
+	margin: 4px 0 0 13px;
+}
+
+.firm_prod_text {
+	font-size: 10px;
+	line-height: 12px;
+	width: 140px;
+	height: 35px;
+	background: url("../images/hit_text_podl.png");
+	z-index: 10;
+	position: absolute;
+	margin: 110px 0 0 168px;
+	text-align: right;
+}
+
+.firm_prod_text a {
+	display: block;
+	color: #fff;
+	margin: 5px 5px 0 0;
+}
+
 .arrow_hit {
 	width: 18px;
 	height: 103px;
@@ -381,7 +421,7 @@ body {
 	width: 540px;
 	height: 150px;
 	float: left;
-	margin: 50px 0 0 45px;
+	margin: 50px 0 0 300px;
 }
 
 .ch-grid {
@@ -450,7 +490,7 @@ body {
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 12px;
+	font-size: 10px;
 	margin: 0 10px;
 	padding: 45px 0 0 0;
 	height: 120px;
@@ -680,9 +720,10 @@ body {
 
 .footer_form textarea {
 	float: left;
-	margin: 10px 0 0 66px;
+	margin: 0 0 0 30px;
 	background-color: #b7dae8;
-	width: 195px;
+	width: 270px;
+	height: 100px;
 	resize: none;
 }
 
@@ -726,4 +767,26 @@ body {
 .firm_gal li img {
 	max-height: 70px;
 	cursor: pointer;
+}
+
+.onas_text {
+	margin: 10px 240px 50px 200px;
+	color: #333;
+}
+
+.onas_text h1 {
+	font-family: Tahoma;
+	font-size: 18px;
+}
+
+.onas_text p {
+	font-family: Tahoma;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.contacts_image {
+	background: url("../images/IMAG0133.jpg") no-repeat;
+	width: 640px;
+	height: 365px;
 }

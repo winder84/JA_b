@@ -9,7 +9,7 @@ $this->headTitle($title);
 
 	<!---------------------------------Левое меню----------------------------->
 	<div class="left_menu">
-		<h4>КАТАЛОГ</h4>
+		<h3>КАТАЛОГ</h3>
 		<ul>
 			<?php
 			foreach ($cat_list as $key => $cl) {
@@ -44,6 +44,7 @@ $this->headTitle($title);
 
 	<!---------------------------------Центр---------------------------------->
 	<?php
+		if(isset($product_all)) {
 			foreach($product_all as $key => $ha) {
 				echo '<ul class="category_list">';
 				echo '<li>';
@@ -62,6 +63,9 @@ $this->headTitle($title);
 				echo '</li>';
 				echo '</ul>';
 			}
+		} else {
+			echo '<a style="display: block; height: 50px; text-align: center;">На данный момент оборудование отсутствует!</a>';
+		}
 	?>
 	<!---------------------------------/Центр---------------------------------->
 

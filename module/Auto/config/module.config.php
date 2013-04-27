@@ -51,6 +51,26 @@ return array(
 					),
 				),
 			),
+			'onas' => array(
+				'type' => 'Zend\Mvc\Router\Http\Literal',
+				'options' => array(
+					'route'	=> '/onas',
+					'defaults' => array(
+						'controller' => 'Auto\Controller\Auto',
+						'action'	 => 'onas',
+					),
+				),
+			),
+			'contacts' => array(
+				'type' => 'Zend\Mvc\Router\Http\Literal',
+				'options' => array(
+					'route'	=> '/contacts',
+					'defaults' => array(
+						'controller' => 'Auto\Controller\Auto',
+						'action'	 => 'contacts',
+					),
+				),
+			),
 		),
 	),
 	'view_manager' => array(
