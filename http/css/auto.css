@@ -1,9 +1,10 @@
 
 .menu_auto {
-	background: url("../images/main_podl.jpg") no-repeat;
-	width: 957px;
-	height: 82px;
-	margin: 0 auto;
+	background: lightblue;
+	width: 1170px;
+	height: 60px;
+	border: 1px groove #000;
+	text-align: center;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
 
 .container {
 	position: relative;
-	background: url("../images/container_bg.png") no-repeat;
 	margin: 0 auto;
 }
 
@@ -63,39 +63,44 @@ body {
 }
 
 .menu_block a {
+	width: 140px;
 	vertical-align: top;
 	display: inline-block;
-	height: 60px;
+	height: 42px;
 	padding-right: 10px;
 	padding-left: 10px;
 	font-family: "Tahoma";
-	font-size: 15px;
+	font-size: 17px;
 	color: #666;
 	padding-top: 18px;
 	vertical-align: top;
+	background: lightblue;
 }
 
 .menu_block a:hover {
-	background: url("../images/menu_current.jpg") no-repeat;
+	background: cornflowerblue;
+	text-shadow: 0px 0px 10px #fff;
+	color: #000 !important;
 }
 
 .menu_block {
 	display: inline-block;
 	vertical-align: top;
-	margin: 0;
 }
 
 .current {
-	color: #333 !important;
-	background: url("../images/menu_current.jpg") no-repeat;
+	color: #000 !important;
+	background: cornflowerblue !important;
+	text-shadow: 0px 0px 10px #fff !important;
 }
 
 .gran {
-	background: url("../images/menu_gran.png") no-repeat;
+	background: url("../images/menu_gran.png") lightblue no-repeat;
 	display: inline-block;
 	height: 60px;
 	width: 5px;
 	vertical-align: top;
+	margin-left: -5px;
 }
 
 
@@ -105,7 +110,6 @@ body {
 
 .center_index {
 	overflow: hidden;
-	margin: -47px 0 -10px 0;
 }
 
 .center_catalog {
@@ -118,6 +122,7 @@ body {
 .top_slider {
 	margin: 0 0 -127px 0;
 	height: 430px;
+	background: url("../images/container_bg.png") no-repeat;
 }
 
 .top_slider ul {
@@ -525,7 +530,7 @@ body {
 }
 
 .ch-info p a:hover {
-	color: rgba(255,242,34, 0.8);
+	color: rgba(255,242,34, 0.9);
 }
 
 .ch-item:hover {
@@ -573,16 +578,17 @@ body {
 	float: left;
 	width: 335px;
 	height: 230px;
-	background: #fff url("../images/main_map_left.png") no-repeat;
+	background: #fff url("../images/map.png") no-repeat;
 	margin-left: -2px;
+	border: 5px groove #ccc;
 }
 
 .phone {
 	width: 129px;
 	height: 129px;
 	float: left;
-	background: url("../images/phone.png") no-repeat;
-	margin: 10px 0 0 -70px;
+	background: url("../images/map_map.png") no-repeat;
+	margin: -40px 0 0 -70px;
 }
 
 .call {
@@ -767,7 +773,6 @@ body {
 .firm_gal li img {
 	max-height: 70px;
 	cursor: pointer;
-<<<<<<< HEAD
 }
 
 .onas_text {
@@ -790,6 +795,4 @@ body {
 	background: url("../images/IMAG0133.jpg") no-repeat;
 	width: 640px;
 	height: 365px;
-=======
->>>>>>> 1cc1fd140030fd17698bd3b7fe49b64276620597
 }
