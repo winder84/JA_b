@@ -71,6 +71,16 @@ return array(
 					),
 				),
 			),
+			'discounts' => array(
+				'type' => 'Zend\Mvc\Router\Http\Literal',
+				'options' => array(
+					'route'	=> '/discounts',
+					'defaults' => array(
+						'controller' => 'Auto\Controller\Auto',
+						'action'	 => 'discounts',
+					),
+				),
+			),
 		),
 	),
 	'view_manager' => array(

@@ -181,4 +181,8 @@ function mail_submit() {
 		.done(function(data) {
 			alert(data);
 		});
+	$('#mail_name').val('');
+	$('#mail_email').val('');
+	$('#mail_topic').val('');
+	$('#mail_text').val('');
 }

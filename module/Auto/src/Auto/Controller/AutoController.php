@@ -436,7 +436,7 @@ class AutoController extends AbstractActionController
 				$product_all[$key]['link'] = '/product/' . $product->id;
 				$product_all[$key]['desc'] = $this->crop_str($product->description,300);
 				$product_all[$key]['image'] = $product->image;
-				$product_all[$key]['firm_id'] = $product->firm_id;
+				$product_all[$key]['firm_id'] = $product->firm_id; 
 			}
 		}
 
@@ -525,10 +525,14 @@ class AutoController extends AbstractActionController
 
 	function crop_str($string, $limit)
 	{
-
 		$substring_limited = substr($string,0, $limit);
-
 		return substr($substring_limited, 0, strrpos($substring_limited, ' ' )) . '...';
-
 	}
+
+	public function discountsAction()
+	{
+		return new ViewModel(array(
+		));
+	}
+
 }

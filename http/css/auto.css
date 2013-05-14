@@ -616,19 +616,23 @@ body {
 }
 
 .afterphone {
-	margin: 20px 0 0 -40px;
+	margin: 0 0 0 -40px;
 	float: left;
 	width: 800px;
+	text-align: left;
 }
 
 .afterphone li {
 	display: inline-block;
 	float: left;
-	width: 190px;
-	font-size: 10px;
-	line-height: 12px;
-	text-align: justify;
+	width: 650px;
+	color: #333;
+	font-style: italic;
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 14px;
 	margin: 0 0 0 10px;
+	font-weight: bold;
 }
 
 .slogan p {
@@ -795,4 +799,38 @@ body {
 	background: url("../images/IMAG0133.jpg") no-repeat;
 	width: 640px;
 	height: 365px;
+}
+
+.main_low_text_ul {
+	margin-left: 50px;
+	text-align: left;
+}
+
+.main_low_text_ul li {
+	list-style: circle;
+	display: list-item;
+	margin-top: 10px;
+}
+
+.discounts h2 {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+.discounts li {
+	font-family: Arial;
+	font-size: 12px;
+	list-style: none;
+}
+
+.discounts a:hover {
+	text-decoration: none;
+	cursor: default;
+}
+
+.discounts hr {
+	border: none; /* Убираем границу для браузера Firefox */
+	color: #999; /* Цвет линии для остальных браузеров */
+	background-color: #999; /* Цвет линии для браузера Firefox и Opera */
+	height: 1px; /* Толщина линии */
 }
